@@ -1,0 +1,1121 @@
+/* =========================================================
+   DR. CH. SURESH BABU — CORPORATE ACADEMIC WEBSITE
+   Font: Times New Roman
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #17243b;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+button,
+input {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.topbar {
+    background: #062d5d;
+    color: #edf5ff;
+    font-size: 14px;
+}
+
+.topbar-inner {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.top-tag {
+    margin-left: auto;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.97);
+    border-bottom: 1px solid #dfe6ef;
+    box-shadow: 0 3px 15px rgba(0,0,0,.04);
+}
+
+.nav-inner {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: #082f60;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #1d76c9;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.nav-links a {
+    color: #24344d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #1d76c9;
+}
+
+.contact-btn {
+    color: white !important;
+    background: #0b376d;
+    padding: 10px 17px;
+    border-radius: 7px;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    background: linear-gradient(120deg, #edf5fd, #ffffff);
+    padding: 70px 0 80px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: #176dc2;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 1;
+    color: #082e5e;
+    margin: 12px 0;
+}
+
+.hero h1 span {
+    color: #1d76c9;
+}
+
+.hero h2 {
+    color: #1d2d45;
+    font-size: 28px;
+    margin: 18px 0 2px;
+}
+
+.institution {
+    color: #4d6078;
+    font-weight: bold;
+}
+
+.intro {
+    color: #5d6c81;
+    max-width: 700px;
+}
+
+
+/* ================= QIP ================= */
+
+.qip-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: white;
+    border: 1px solid #bcd2e9;
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 28px 0;
+
+    box-shadow: 0 12px 35px rgba(20,60,105,.10);
+}
+
+.qip-icon {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background: #e6f2ff;
+    color: #1169bd;
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.qip-icon small {
+    font-size: 12px;
+}
+
+.qip-title {
+    color: #0b3a75;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.qip-content p {
+    margin: 4px 0 0;
+    color: #5d6c81;
+    font-size: 15px;
+}
+
+.qip-content strong {
+    color: #087866;
+}
+
+.qip-year {
+    margin-left: auto;
+    background: #087866;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.primary {
+    background: #176dc2;
+    color: white;
+}
+
+.secondary {
+    border: 1px solid #b7c9dc;
+    background: white;
+    color: #0d376c;
+}
+
+.white {
+    background: white;
+    color: #0d376c;
+}
+
+
+/* ================= STATISTICS ================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.stats div {
+    border-top: 2px solid #d3dfec;
+    padding-top: 9px;
+}
+
+.stats b {
+    display: block;
+    font-size: 26px;
+    color: #0c3b76;
+}
+
+.stats span {
+    color: #657389;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PASSPORT-STYLE CIRCULAR PROFILE PHOTO
+   ========================================================= */
+
+.profile-side {
+    text-align: center;
+}
+
+.passport-frame {
+    position: relative;
+
+    width: 365px;
+    height: 365px;
+
+    margin: auto;
+
+    padding: 10px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #062e63,
+            #1d76c9,
+            #66b8f2
+        );
+
+    box-shadow:
+        0 25px 70px rgba(5,45,90,.22);
+}
+
+.passport-frame img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    object-fit: cover;
+
+    /* makes the face larger and clear */
+    object-position: center 23%;
+
+    transform: scale(1.08);
+
+    image-rendering: auto;
+}
+
+.zoom-photo {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+
+    border: 2px solid white;
+
+    background: #082f60;
+    color: white;
+
+    padding: 9px 13px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.profile-side h3 {
+    font-size: 24px;
+    margin: 18px 0 0;
+}
+
+.profile-side p {
+    color: #66758a;
+    margin-top: 2px;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 90px 0;
+}
+
+.section h2 {
+    font-size: clamp(34px,4vw,50px);
+    line-height: 1.15;
+    color: #0b315f;
+    margin: 7px 0 30px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.two-col p {
+    color: #5b6a80;
+}
+
+.info-card {
+    border: 1px solid #e0e7ef;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.info-card div {
+    padding: 21px;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.info-card div:last-child {
+    border-bottom: none;
+}
+
+.info-card label {
+    display: block;
+    color: #1d76c9;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.info-card strong {
+    display: block;
+    font-size: 19px;
+}
+
+.info-card small {
+    color: #68768b;
+}
+
+
+/* ================= ACADEMICS ================= */
+
+.grey {
+    background: #f5f8fc;
+}
+
+.academic-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.academic-card {
+    background: white;
+    border: 1px solid #dfe6ee;
+    border-radius: 16px;
+    padding: 25px;
+    min-height: 220px;
+}
+
+.academic-card.featured {
+    border-color: #82b9e8;
+    box-shadow: 0 12px 35px rgba(22,102,180,.10);
+}
+
+.latest {
+    display: inline-block;
+    color: #176dc2;
+    background: #e9f4ff;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.academic-card h3 {
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.academic-card p {
+    color: #66758a;
+}
+
+.degree {
+    color: #176dc2;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.academic-card strong {
+    color: #087866;
+}
+
+
+/* ================= RESEARCH ================= */
+
+.dark {
+    background: #092f5f;
+    color: #dce9f9;
+}
+
+.dark h2 {
+    color: white;
+}
+
+.dark .eyebrow {
+    color: #73b7ff;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.research-grid article {
+    background: #103d73;
+    border: 1px solid #2a5687;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.research-grid span {
+    color: #6db3ff;
+    font-weight: bold;
+}
+
+.research-grid h3 {
+    color: white;
+    font-size: 21px;
+}
+
+.research-grid p {
+    color: #b9cae0;
+}
+
+.research-bar {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.research-bar div {
+    background: #0d376a;
+    border-left: 3px solid #55a7ff;
+    padding: 20px;
+}
+
+.research-bar b,
+.research-bar span {
+    display: block;
+}
+
+.research-bar span {
+    color: #b7c9df;
+}
+
+
+/* ================= PUBLICATIONS ================= */
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.search {
+    width: 350px;
+    padding: 13px 15px;
+    border: 1px solid #d7e0eb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.paper-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.paper {
+    background: white;
+    border: 1px solid #e1e7ef;
+    border-radius: 13px;
+    padding: 19px;
+}
+
+.paper h3 {
+    font-size: 17px;
+    line-height: 1.45;
+    margin: 0 0 7px;
+}
+
+.paper-meta {
+    color: #68758a;
+    font-size: 14px;
+}
+
+.index {
+    display: inline-block;
+    background: #eaf4ff;
+    color: #176dc2;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   EVENT BANNER — AUTOMATIC LEFT TO RIGHT ROLLOUT
+   ========================================================= */
+
+.events-section {
+    background: #ffffff;
+}
+
+.event-banner {
+    position: relative;
+    overflow: hidden;
+
+    height: 430px;
+
+    border-radius: 18px;
+
+    background: #092f5f;
+
+    box-shadow: 0 18px 45px rgba(10,45,90,.15);
+}
+
+.banner-track {
+    display: flex;
+    height: 100%;
+
+    transition:
+        transform .7s ease-in-out;
+}
+
+.banner-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-slide::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,25,60,.82),
+            rgba(0,25,60,.15)
+        );
+}
+
+.banner-caption {
+    position: absolute;
+
+    left: 55px;
+    bottom: 60px;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 500px;
+}
+
+.banner-caption span {
+    color: #8ecbff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner-caption h3 {
+    font-size: 36px;
+    margin: 8px 0;
+}
+
+.banner-caption p {
+    font-size: 17px;
+}
+
+
+/* Banner controls */
+
+.banner-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.90);
+
+    color: #092f5f;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+.banner-arrow:hover {
+    background: white;
+}
+
+.banner-arrow.prev {
+    left: 18px;
+}
+
+.banner-arrow.next {
+    right: 18px;
+}
+
+.banner-dots {
+    position: absolute;
+
+    z-index: 10;
+
+    bottom: 18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.banner-dot {
+    width: 10px;
+    height: 10px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.5);
+
+    cursor: pointer;
+}
+
+.banner-dot.active {
+    background: white;
+    transform: scale(1.25);
+}
+
+
+/* =========================================================
+   EVENT UPLOAD GALLERY
+   ========================================================= */
+
+.upload-box {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border: 2px dashed #b9cde3;
+
+    border-radius: 15px;
+
+    background: #f7fbff;
+}
+
+.upload-box h3 {
+    margin-top: 0;
+    color: #0b315f;
+}
+
+.upload-box p {
+    color: #5f6f84;
+}
+
+.upload-button {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: #176dc2;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.event-gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.event-gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: white;
+
+    border: 1px solid #dce5ee;
+}
+
+.event-gallery-item img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.event-gallery-item span {
+    display: block;
+
+    padding: 8px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #dfe6ee;
+    border-radius: 16px;
+    padding: 26px;
+}
+
+.project-card span {
+    color: #176dc2;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.project-card h3 {
+    font-size: 21px;
+}
+
+.project-card p {
+    color: #66758a;
+}
+
+
+/* ================= RESUME ================= */
+
+.resume-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.resume-section p {
+    color: #bdd0e6;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: #eaf4ff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 17px;
+    box-shadow: 0 15px 40px rgba(25,60,100,.08);
+}
+
+.contact-card a {
+    display: block;
+    color: #176dc2;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 7px 0;
+}
+
+.contact-card p {
+    color: #68768a;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #061f40;
+}
+
+.footer {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #afbdd0;
+    font-size: 14px;
+}
+
+
+/* ================= PHOTO ZOOM MODAL ================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 5000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,.88);
+
+    padding: 30px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal img {
+    max-width: 92vw;
+    max-height: 92vh;
+
+    border: 7px solid white;
+
+    border-radius: 8px;
+
+    object-fit: contain;
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+    color: #092f5f;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 950px) {
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 116px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-grid,
+    .two-col,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-side {
+        order: -1;
+    }
+
+    .academic-grid,
+    .research-grid,
+    .event-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .paper-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .top-tag {
+        display: none;
+    }
+
+    .topbar-inner {
+        padding: 7px 0;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .academic-grid,
+    .research-grid,
+    .research-bar,
+    .project-grid,
+    .event-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-head {
+        display: block;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .passport-frame {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .qip-card {
+        align-items: flex-start;
+    }
+
+    .qip-year {
+        display: none;
+    }
+
+    .event-banner {
+        height: 360px;
+    }
+
+    .banner-caption {
+        left: 30px;
+        bottom: 45px;
+        right: 30px;
+    }
+
+    .banner-caption h3 {
+        font-size: 28px;
+    }
+
+    .footer {
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
